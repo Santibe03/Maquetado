@@ -1,12 +1,14 @@
-import BusquedaInc from './components/Busqueda'
-import Rol from './components/Prueba'
+import BusquedaInc from './components/Header'
+import Prueba from './components/Prueba'
 
-function App() {
-  return <BusquedaInc/>;
+import React from 'react'
+
+export const App = () => {
+  return (
+    <div></div>
+  )
 }
 
-export default App
-function App2(){
-  return <Rol/>
-}
+
+
 
