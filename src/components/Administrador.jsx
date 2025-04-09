@@ -8,7 +8,7 @@ export const Administrador = () => {
         <>
             <Header />
             <div className="contenedor-principal">
-                <h1>Registro de Ingreso de Venta</h1>
+                <h1>Registro de Ingreso </h1>
                 <form action="#" method="post" className="formulario-registro">
                     <div>
                         <label htmlFor="id_ingreso">ID Ingreso:</label>
@@ -61,7 +61,7 @@ export const Administrador = () => {
                         <input type="number" id="cantidad" name="cantidad" min="1" required />
                     </div>
                     <br />
-                    <button type="submit">Registrar Venta</button>
+                    <button type="submit">Registrar Ingreso</button>
                 </form>
             </div>
             <Footer />
