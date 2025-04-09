@@ -1,12 +1,12 @@
 import React from 'react'
-import imagenes from "./../assets/imagenes/proyect.png"
+import proyecto from "./../assets/imagenes/proyect.png"
 import "./../Styles/Header.css"
 
 export const Header = () => {
   return (
     <header>
     <div className="top">
-      <img src={imagenes} alt="logo" className="logo"style={{ width: '100px', height: 'auto' }} />
+      <img src={proyecto} alt="logo" className="logo"style={{ width: '100px', height: 'auto' }} />
       <h1>INVENTORYIND AND COUNING</h1>
       <div className="una">
         <input type="text" placeholder="Buscar..." />
