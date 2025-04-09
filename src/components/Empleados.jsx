@@ -1,14 +1,20 @@
-import React from 'react'
-import Header from './Header'
+import React from "react"
+import Header from "./Header"
+import Footer from "./Footer"
+import BodyMenu from "./BodyMenu"
 
-export const Empleados = () => {
+const App = () => {
     return (
-        <>
-            <Header />
-            <div>Empleados</div>
-            <Footer/>
-        </>
-    )
-}
+      <>
+        <Header />
+        <div>
+          <BodyMenu /> 
+          
+        </div>
+        <Footer />
+      </>
+    );
+  };
+  
+  export default App;
 
-export default Empleados
