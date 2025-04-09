@@ -14,14 +14,14 @@ export const Header = () => {
       </div>
 
       <div className="iconos">
-        <span>👤 Mi cuenta</span>
-        <span>🛒 Añadir al carrito</span>
+        <a href="/cuenta">👤 Mi cuenta</a>
+        <a href="/carrito">🛒 Añadir al carrito</a>
       </div>
     </div>
     <nav>
-      <a href="#">Administrador</a>
-      <a href="#">Cliente</a>
-      <a href="#">Empleados</a>
+      <a href="/administrador">Administrador</a>
+      <a href="/cliente">Cliente</a>
+      <a href="/empleados">Empleados</a>
     </nav>
   </header>
   )
