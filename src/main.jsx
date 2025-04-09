@@ -6,8 +6,10 @@ import MiCuenta from './components/MiCuenta'
 import Empleados from './components/Empleados'
 import Cliente from './components/Cliente'
 import Registro from './components/Registro'
+import Administradorinsumo from './components/AdmiIngresoinsumo'
 import { BrowserRouter, Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
+
 
 
 
@@ -25,6 +27,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/empleados" element={<Empleados />} />
         <Route path="/home" element={<Body />} />
         <Route path="/registro" element={<Registro />} />
+        <Route path="/agregarinsumo" element={<Administradorinsumo />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
