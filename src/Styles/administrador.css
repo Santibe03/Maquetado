@@ -1,0 +1,42 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center;    /* Centra horizontalmente el contenido */
+    min-height: calc(100vh - (altura de tu Header + altura de tu Footer)); /* Asegura que ocupe al menos la altura de la pantalla */
+    padding: 20px; /* Añade un poco de espacio alrededor */
+}
+
+.formulario-registro {
+    width: 100%; /* El formulario ocupa el ancho de su contenedor */
+    max-width: 600px; /* Define un ancho máximo para que no se vea demasiado grande */
+    padding: 20px;
+    border: 1px solid #ccc; /* Opcional: añade un borde para visualizar el formulario */
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+    background-color: #f9f9f9; /* Opcional: un fondo ligero */
+}
+
+.formulario-registro > div {
+    margin-bottom: 10px; /* Espacio entre los campos del formulario */
+}
+
+.formulario-registro h2 {
+    text-align: center; /* Centra el título "Detalle del Insumo" */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.formulario-registro button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Un color azul primario */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-registro button[type="submit"]:hover {
+    background-color: #0056b3; /* Un tono más oscuro al pasar el ratón */
+}
