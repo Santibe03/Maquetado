@@ -30,7 +30,7 @@ body {
     font-weight: bold;
   }
   
-  /* Estilo para el buscador */
+
   .buscar {
     padding: 6px 10px;
     border: 1px solid #ccc;
@@ -93,30 +93,5 @@ body {
     width: 80%;
     max-width: 700px;
     height: auto;
-  }
-  
-
-  .footer {
-    display: flex;
-    justify-content: space-around;
-    background: #f7f7f7;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-  }
-  
-  .footer-section {
-    text-align: center;
-  }
-  
-  .footicono {
-    width: 50px;
-    height: auto;
-    margin-bottom: 5px;
-  }
-  
-
-  .socialicons img {
-    width: 24px;
-    margin: 0 5px;
   }
   

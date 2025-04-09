@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import "./../Styles/AdministradosIngresoinsumo.css"
+import "./../Styles/admi-insu.css"
 
-export const Administrador = () => {
+export const Administradorinsumo = () => {
     return (
         <>
             <Header />
@@ -69,4 +69,4 @@ export const Administrador = () => {
     );
 };
 
-export default Administrador;
+export default Administradorinsumo;

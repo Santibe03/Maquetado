@@ -1,115 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - (altura de tu Header + altura de tu Footer));
+  padding: 20px;
+}
 
-  .br {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f7f7f7;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .lados,
-  .navcentro,
-  .navcentro {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 40px;
-    height: auto;
-  }
-  
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .buscar {
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 180px;
-  }
-  
-  .menu-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .menu-button {
-    background-color: #ddd;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  .dropdown {
-    display: none;
-    position: absolute;
-    top: 110%;
-    left: 0;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    min-width: 150px;
-    z-index: 1000;
-  }
-  
-  .dropdown a {
-    display: block;
-    padding: 10px 15px;
-    color: black;
-    text-decoration: none;
-  }
-  
-  .dropdown a:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .menu-container:hover .dropdown {
-    display: block;
-  }
-  
+.formulario-registro {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
 
-  .section1 {
-    text-align: center;
-    padding: 40px 0;
-  }
-  
-  .image {
-    width: 80%;
-    max-width: 700px;
-    height: auto;
-  }
-  .footer {
-    display: flex;
-    justify-content: space-around;
-    background: #f7f7f7;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-  }
-  
-  .footer-section {
-    text-align: center;
-    
-  }
-  
-  .footicono {
-    width: 50px;
-    height: auto;
-    margin-bottom: 5px;
-  }
-  
-  .socialicons img {
-    width: 24px;
-    margin: 0 5px;
-  }
+.formulario-registro > div {
+  margin-bottom: 10px;
+}
+
+.formulario-registro h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.formulario-registro button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario-registro button[type="submit"]:hover {
+  background-color: #0056b3; 
+}
