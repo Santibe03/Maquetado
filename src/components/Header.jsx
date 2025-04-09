@@ -7,15 +7,17 @@ export const Header = () => {
     <header>
     <div className="top">
       <img src={imagenes} alt="logo" className="logo" />
-      <h1>INVENTORYIND AND COUNING</h1>
+      <a href="/home">INVENTORYIND AND COUNING</a>
       <div className="una">
         <input type="text" placeholder="Buscar..." />
         <button>🔍</button>
       </div>
 
       <div className="iconos">
-        <a href="/cuenta">👤 Mi cuenta</a>
-        <a href="/carrito">🛒 Añadir al carrito</a>
+        <a href="/cuenta">👤 Iniciar sesión </a>
+        <a href="/Registro">📝 Registrarme </a>
+        <a href="/carrito">🛒 Añadir al carrito </a>
+
       </div>
     </div>
     <nav>
