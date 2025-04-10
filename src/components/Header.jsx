@@ -16,8 +16,6 @@ export const Header = () => {
       <div className="iconos">
         <a href="/cuenta">👤 Iniciar sesión </a>
         <a href="/Registro">📝 Registrarme </a>
-        <a href="/carrito">🛒 Añadir al carrito </a>
-
       </div>
     </div>
     <nav>
