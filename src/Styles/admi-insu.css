@@ -1,0 +1,42 @@
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - (altura de tu Header + altura de tu Footer));
+  padding: 20px;
+}
+
+.formulario-registro {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.formulario-registro > div {
+  margin-bottom: 10px;
+}
+
+.formulario-registro h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.formulario-registro button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario-registro button[type="submit"]:hover {
+  background-color: #0056b3; 
+}

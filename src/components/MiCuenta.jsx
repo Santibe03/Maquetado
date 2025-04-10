@@ -55,8 +55,10 @@ export const MiCuenta = () => {
           <button style={styles.button}>Ingresar</button>
 
           <div style={styles.links}>
-            <a href="/Registro">¿Perdiste tu contraseña?</a>
-            <a href="/Registro">¿No tienes cuenta? ¡Regístrate!</a>
+
+            <a href="#">¿Perdiste tu contraseña?</a>
+            <a href="#">¿No tienes cuenta? ¡Regístrate!</a>
+
           </div>
         </div>
       </div>
@@ -65,4 +67,6 @@ export const MiCuenta = () => {
   )
 }
 
+
 export default MiCuenta
+

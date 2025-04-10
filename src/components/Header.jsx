@@ -1,13 +1,13 @@
 import React from 'react'
-import imagenes from "./../assets/imagenes/imagenes.png"
+import proyecto from "./../assets/imagenes/proyect.png"
 import "./../Styles/Header.css"
 
 export const Header = () => {
   return (
     <header>
     <div className="top">
-      <img src={imagenes} alt="logo" className="logo" />
-      <a href="/home">INVENTORYIND AND COUNING</a>
+      <img src={proyecto} alt="logo" className="logo" />
+      <a href='/home'>INVENTORYIND AND COUNING</a>
       <div className="una">
         <input type="text" placeholder="Buscar..." />
         <button>🔍</button>
@@ -16,6 +16,7 @@ export const Header = () => {
       <div className="iconos">
         <a href="/cuenta">👤 Iniciar sesión </a>
         <a href="/Registro">📝 Registrarme </a>
+
       </div>
     </div>
     <nav>
