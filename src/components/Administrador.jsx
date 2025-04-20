@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import Proyecto from "./../assets/imagenes/proyect.png"
 import "./../Styles/admi.css"
 
 export const Administrador = () => {
@@ -16,8 +17,6 @@ export const Administrador = () => {
             <main>
                 <header className="br">
                     <div className="lados">
-                        <img src="imagenes/logo.jpg" alt="Logo" className="logo" />
-                        <span className="title">Inventoring and counting</span>
                     </div>
 
                     <div className="navcentro">
@@ -44,7 +43,6 @@ export const Administrador = () => {
                             )}
                         </div>
 
-                        <input type="text" className="buscar" placeholder="Buscar..." />
                     </div>
 
                     <div className="navcentro">
@@ -53,7 +51,7 @@ export const Administrador = () => {
                 </header>
 
                 <section className="section1">
-                    <img src="imagenes/logo.jpg" alt="Banner Principal" className="image" />
+                    <img src={Proyecto} alt="" className="image" />
                 </section>
 
             </main>

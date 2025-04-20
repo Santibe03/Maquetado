@@ -94,4 +94,47 @@ body {
     max-width: 700px;
     height: auto;
   }
+  .menu-vertical-container {
+    background-color: #f8f8f8; /* Un fondo claro para el contenedor */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Ancho fijo del menú */
+    margin: 20px; /* Márgenes alrededor del menú */
+  }
+  
+  .menu-vertical-list {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    gap: 8px; /* Espacio entre los elementos de la lista */
+  }
+  
+  .menu-vertical-item {
+    margin: 0;
+  }
+  
+  .menu-vertical-button {
+    display: block; /* Hace que el enlace ocupe todo el ancho del li */
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    background-color: #e0e0e0; /* Color de fondo del botón */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left; /* Alinea el texto a la izquierda dentro del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .menu-vertical-button:hover {
+    background-color: #d0d0d0; /* Color de fondo al pasar el ratón */
+  }
+  
+  .cliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
   
