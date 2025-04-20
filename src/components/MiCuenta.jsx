@@ -57,7 +57,7 @@ export const MiCuenta = () => {
           <div style={styles.links}>
 
             <a href="#">¿Perdiste tu contraseña?</a>
-            <a href="#">¿No tienes cuenta? ¡Regístrate!</a>
+            <a href="/Registro">¿No tienes cuenta? ¡Regístrate!</a>
 
           </div>
         </div>

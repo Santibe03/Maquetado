@@ -1,6 +1,6 @@
 import React from 'react'
-import proyecto from "./../assets/imagenes/proyect.png"
-import "./../Styles/Header.css"
+import proyecto from "./../assets/imagenes/logo.png"
+import "./../Styles/header.css"
 
 export const Header = () => {
   return (

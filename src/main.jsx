@@ -7,9 +7,15 @@ import Empleados from './components/Empleados'
 import Cliente from './components/Cliente'
 import Registro from './components/Registro'
 import Administradorinsumo from './components/AdmiIngresoinsumo'
+import RealizarPedido from './components/RealizarPedido'
+import ConsultarPedido from './components/ConsultarPedido'
+import CancelarPedido from './components/CancelarPedido'
 import { BrowserRouter, Routes } from 'react-router-dom'
 import { Route } from 'react-router-dom'
-
+import ModificarPedido from './components/ModificarPedido'
+import PedidoCancelado from './components/PedidoCancelado'
+import HistorialPedidos from './components/HistorialPedidos'
+import ContactarEmpresa from './components/ContactarEmpresa'
 
 
 
@@ -28,6 +34,13 @@ createRoot(document.getElementById('root')).render(
         <Route path="/home" element={<Body />} />
         <Route path="/registro" element={<Registro />} />
         <Route path="/agregarinsumo" element={<Administradorinsumo />} />
+        <Route path="/realizarpedido" element={<RealizarPedido />} />
+        <Route path="/consultarpedido" element={<ConsultarPedido />} />
+        <Route path="/modificarpedido" element={<ModificarPedido />} />
+        <Route path="/cancelarpedido" element={<CancelarPedido />} />
+        <Route path="/pedidocancelado" element={<PedidoCancelado />} />
+        <Route path="/verhistorial" element={<HistorialPedidos />} />
+        <Route path="/contactar" element={<ContactarEmpresa />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
