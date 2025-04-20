@@ -7,7 +7,7 @@ export const Header = () => {
     <header>
     <div className="top">
       <img src={proyecto} alt="logo" className="logo" />
-      <a href='/home'>INVENTORYIND AND COUNING</a>
+      <a href='/home'>INVENTORING AND COUNTING</a>
       <div className="una">
         <input type="text" placeholder="Buscar..." />
         <button>🔍</button>

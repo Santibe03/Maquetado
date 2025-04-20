@@ -17,7 +17,7 @@ export const Administrador = () => {
                 <header className="br">
                     <div className="lados">
                         <img src="imagenes/logo.jpg" alt="Logo" className="logo" />
-                        <span className="title">Inventoyingd and counting</span>
+                        <span className="title">Inventoring and counting</span>
                     </div>
 
                     <div className="navcentro">
