@@ -19,7 +19,7 @@ function HistorialPedidos() {
 
     return (
         <>
-        <Header />
+        
             <div className="historial-pedidos-container">
                 <h2>Historial de Pedidos</h2>
                 {historial.length === 0 ? (
@@ -54,7 +54,7 @@ function HistorialPedidos() {
                     </table>
                 )}
             </div>
-        <Footer />
+        
         </>
     );
 }

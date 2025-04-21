@@ -6,7 +6,7 @@ import "./../Styles/admi-insu.css"
 export const Administradorinsumo = () => {
     return (
         <>
-            <Header />
+            
             <div className="contenedor-principal">
                 <h1>Registro de Ingreso </h1>
                 <form action="#" method="post" className="formulario-registro">
@@ -64,7 +64,7 @@ export const Administradorinsumo = () => {
                     <button type="submit">Registrar Ingreso</button>
                 </form>
             </div>
-            <Footer />
+        
         </>
     );
 };

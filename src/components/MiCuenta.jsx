@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
+
 
 export const MiCuenta = () => {
   const styles = {
@@ -43,7 +42,7 @@ export const MiCuenta = () => {
 
   return (
     <>
-      <Header />
+      
       <div style={styles.container}>
         <div style={styles.card}>
           <h1>INVENTORYIND AND COUNTING</h1>
@@ -62,7 +61,7 @@ export const MiCuenta = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </>
   )
 }

@@ -1,13 +1,12 @@
 import React from 'react';
 import './../Styles/PedidoDetalle.css'; // Archivo de estilos opcional
-import Header from './Header';
-import Footer from './Footer';
+
 
 export const PedidoSencillo = () => {
 
     return (
         <>
-        <Header />
+    
         <div className="pedido-cuadrado">
             <h3>Detalles del Pedido</h3>
             <p><strong>Producto:</strong>######</p>
@@ -17,7 +16,7 @@ export const PedidoSencillo = () => {
             <p><strong>Dirección:</strong>##### #####</p>
             {/* Puedes agregar más detalles aquí */}
         </div>
-        <Footer />
+ 
         </>
     );
 }

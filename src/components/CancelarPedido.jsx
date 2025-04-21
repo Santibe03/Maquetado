@@ -32,7 +32,7 @@ function CancelarPedido() {
 
     return (
         <>
-            <Header />
+    
             <div className="cancelar-pedido-container">
                 <h2>Cancelar Pedido</h2>
                 <p>¿Estás seguro de que deseas cancelar el siguiente pedido?</p>
@@ -57,7 +57,7 @@ function CancelarPedido() {
 
                 <button className="volver-button" onClick={handleVolver}>Volver al Pedido</button>
             </div>
-            <Footer />
+    
         </>
     );
 }

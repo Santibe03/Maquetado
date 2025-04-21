@@ -6,7 +6,7 @@ import Footer from './Footer'
 export const Body = () => {
   return (
     <>
-      <Header/>
+      
       <main>
         <section className="productos">
           <div className="productos2">
@@ -87,7 +87,6 @@ export const Body = () => {
           </div>
         </section>
       </main>
-      <Footer/>
     </>
   )
 }

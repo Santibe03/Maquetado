@@ -13,7 +13,7 @@ export const Administrador = () => {
 
     return (
         <>
-            <Header />
+           
             <main>
                 <header className="br">
                     <div className="lados">
@@ -55,7 +55,7 @@ export const Administrador = () => {
                 </section>
 
             </main>
-            <Footer />
+           
         </>
     );
 };
