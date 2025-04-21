@@ -16,6 +16,9 @@ import ModificarPedido from './components/ModificarPedido'
 import PedidoCancelado from './components/PedidoCancelado'
 import HistorialPedidos from './components/HistorialPedidos'
 import ContactarEmpresa from './components/ContactarEmpresa'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Productos from './components/Productos'
 
 
 
@@ -24,6 +27,7 @@ import ContactarEmpresa from './components/ContactarEmpresa'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Header/>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Body />} />
@@ -41,7 +45,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/pedidocancelado" element={<PedidoCancelado />} />
         <Route path="/verhistorial" element={<HistorialPedidos />} />
         <Route path="/contactar" element={<ContactarEmpresa />} />
+        <Route path="/productos" element={<Productos />}/>
       </Routes>
     </BrowserRouter>
+    <Footer/>
   </StrictMode>
 )

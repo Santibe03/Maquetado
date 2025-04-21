@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 export const Cliente = () => {
   return (
     <>
-      <Header />
+      
       <div>
         <header className="br">
           <div className="lados"></div>
@@ -133,7 +133,7 @@ export const Cliente = () => {
       <section className="section1">
         <img src={Proyecto} alt="" className="image" />
       </section>
-      <Footer />
+      
     </>
 
   )

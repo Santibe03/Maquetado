@@ -72,7 +72,7 @@ function ModificarPedido() {
 
     return (
         <>
-        <Header />
+        
         <div className="modificar-pedido-container">
             <h2>Modificar Pedido</h2>
             <form onSubmit={handleSubmit} className="modificar-pedido-form">
@@ -139,7 +139,7 @@ function ModificarPedido() {
                 <button type="button" className="cancelar-button" onClick={handleCancelar}>Cancelar</button>
             </form>
         </div>
-        <Footer />
+        
         </>
     );
 }

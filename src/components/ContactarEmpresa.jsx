@@ -42,19 +42,19 @@ function ContactarEmpresa() {
     if (enviado) {
         return (
             <>
-            <Header />
+            
             <div className="contacto-enviado-container">
                 <h2>¡Gracias por contactarnos!</h2>
                 <p>Hemos recibido tu mensaje y te responderemos a la brevedad.</p>
             </div>
-            <Footer />
+            
             </>
         );
     }
 
     return (
         <>
-        <Header />
+       
         <div className="contacto-empresa-container">
             <h2>Contactar con la Empresa</h2>
             <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros.</p>
@@ -95,7 +95,7 @@ function ContactarEmpresa() {
                 <button type="submit" className="enviar-button">Enviar Mensaje</button>
             </form>
         </div>
-        <Footer />
+   
         </>
     );
 }

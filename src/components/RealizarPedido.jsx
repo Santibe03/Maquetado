@@ -14,7 +14,7 @@ function RealizarPedidoForm() {
 
     return (
         <div>
-            <Header />
+           
             <form className="pedido-form">
                 <h2>Realizar Pedido</h2>
                 <div className="form-group">
@@ -44,7 +44,7 @@ function RealizarPedidoForm() {
                 </div>
                 <button type="button" className="submit-button" onClick={handleSubmit}>Realizar Pedido</button>
             </form>
-            <Footer />
+            
         </div>
     );
 }

@@ -15,7 +15,7 @@ function PedidoCancelado() {
 
     return (
         <>
-            <Header />
+            
             <div style={{ textAlign: 'center', padding: '20px', marginTop: '20px', border: '1px solid #d4edda', backgroundColor: '#d1e7dd', color: '#0f5132', borderRadius: '5px' }}>
                 <h2>Pedido Cancelado</h2>
                 <p>{mensaje}</p>
@@ -24,7 +24,7 @@ function PedidoCancelado() {
             <section className="section1">
                 <img src={Proyecto} alt="" className="image" />
             </section>
-            <Footer />
+            
         </>
     );
 }
