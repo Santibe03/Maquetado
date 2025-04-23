@@ -19,33 +19,56 @@ import ContactarEmpresa from './components/ContactarEmpresa'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Productos from './components/Productos'
-
-
-
-
-
-
+import ConfirmarPedidos from './components/ConfirmarPedidos'
+import ConfirmarReservas from './components/ConfirmarReservas'
+import ConsultarReservas from './components/ConsultarReservas'
+import ModificarUbi from './components/ModificarUbi'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header/>
     <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<Body />} />
+
         <Route path="/cuenta" element={<MiCuenta />} />
+
         <Route path="/administrador" element={<Administrador />} />
         <Route path="/cliente" element={<Cliente />} />
+
         <Route path="/empleados" element={<Empleados />} />
+
         <Route path="/home" element={<Body />} />
+
         <Route path="/registro" element={<Registro />} />
+
         <Route path="/agregarinsumo" element={<Administradorinsumo />} />
+
         <Route path="/realizarpedido" element={<RealizarPedido />} />
+
         <Route path="/consultarpedido" element={<ConsultarPedido />} />
+
         <Route path="/modificarpedido" element={<ModificarPedido />} />
+
         <Route path="/cancelarpedido" element={<CancelarPedido />} />
+
         <Route path="/pedidocancelado" element={<PedidoCancelado />} />
+
         <Route path="/verhistorial" element={<HistorialPedidos />} />
+
         <Route path="/contactar" element={<ContactarEmpresa />} />
+
         <Route path="/productos" element={<Productos />}/>
+
+        <Route path="/confirmarpedidos" element={<ConfirmarPedidos/>}/> 
+
+        <Route path="/confirmarreservas" element={<ConfirmarReservas/>}/> 
+
+        <Route path="/consultarreservas" element={<ConsultarReservas/>}/> 
+
+        <Route path="/modificarubi" element={<ModificarUbi/>}/> 
+
+
       </Routes>
     </BrowserRouter>
     <Footer/>

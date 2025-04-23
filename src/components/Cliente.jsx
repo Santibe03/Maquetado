@@ -29,8 +29,10 @@ export const Cliente = () => {
       <nav className="menu-vertical-container">
       <ul className="menu-vertical-list">
         <li className="menu-vertical-item">
+
           <Link to="/realizarpedido" className="menu-vertical-button">Realizar pedido</Link>
         </li>
+        
         <li className="menu-vertical-item">
           <Link to="/consultarpedido" className="menu-vertical-button">Consultar pedido</Link>
         </li>

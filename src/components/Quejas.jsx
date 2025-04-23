@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./quejas.css";
+import "./../Styles/Quejas.css";
 import 'src/Styles/AdimiOpiniones.css'
 
 
 const datos = [
+
   {
     id: 1,
     nombre: "Juan Pérez",
@@ -12,6 +13,7 @@ const datos = [
     fecha: "20 de abr, 2024",
     mensaje: "El servicio fue excelente.",
   },
+
   {
     id: 2,
     nombre: "Carlos López",

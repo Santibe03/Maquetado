@@ -1,0 +1,87 @@
+.confirmar-contenedor {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .confirmar-contenedor h2 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-pedido h3 {
+    color: #444;
+  }
+  
+  .info-pedido ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .info-pedido p {
+    margin: 0.5rem 0;
+    color: #444;
+  }
+  
+  .total {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .acciones {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .confirmar {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .confirmar:hover {
+    background-color: #218838;
+  }
+  
+  .cancelar {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .cancelar:hover {
+    background-color: #c82333;
+  }
+  
+  .mensaje {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .exito {
+    color: #28a745;
+  }
+  
+  .error {
+    color: #dc3545;
+  }

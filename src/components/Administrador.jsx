@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
 import Header from './Header';
+import "./../Styles/Cliente.css"
+import "./../Styles/admi.css"
 import Footer from './Footer';
 import Proyecto from "./../assets/imagenes/proyect.png"
-import "./../Styles/admi.css"
 import { Link } from 'react-router-dom'
 
 export const Administrador = () => {
-    const [menuVisible, setMenuVisible] = useState(false);
-
-    const toggleMenu = () => {
-        setMenuVisible(!menuVisible);
-    };
-
     return (
         <>
 
@@ -22,6 +17,7 @@ export const Administrador = () => {
                 <span>Administrador  👤</span>
                 </div>
                 </header>
+
             </div>
             <div className='administrador'>
                 <div>
@@ -32,10 +28,10 @@ export const Administrador = () => {
                 
             </div>
        
-            <main>
                <nav className="menu-center-container">
                      <ul className="menu-vertical-list">
                        <li className="menu-vertical-item">
+
                          <Link to="/adminiingresoinsumo" className="menu-vertical-button">Agregar Insumos </Link>
                        </li>
                        <li className="menu-vertical-item">
@@ -52,26 +48,23 @@ export const Administrador = () => {
                          <Link to="/verhistorial" className="menu-vertical-button">Administrar Cuenta </Link>
                        </li>
                        <li className="menu-vertical-item">
-                         <Link to="/verhistorial" className="menu-vertical-button">Ver Opiniones Quejas o Reclamos  </Link>
+                         <Link to="/verhistorial" className="menu-vertical-button">Buzon de sugerencias  </Link>
                        </li>
-                       <li className="menu-vertical-item">
-                         <Link to="/verhistorial" className="menu-vertical-button">Desactivar  Cuentas </Link>
-                       </li>
-
-                       <li className="menu-vertical-item">
-                         <Link to="/verhistorial" className="menu-vertical-button">Revisar Cuentas </Link>
-                        </li>
 
                         <li className="menu-vertical-item">
-                         <Link to="/verhistorial" className="menu-vertical-button">Confirmar Pedidos </Link>
+                         <Link to="/confirmarpedidos" className="menu-vertical-button">Confirmar Pedidos </Link>
                        </li>
 
                        <li className="menu-vertical-item">
-                         <Link to="/verhistorial" className="menu-vertical-button">Consultar  Pedidos </Link>
+                         <Link to="/verhistorial" className="menu-vertical-button">Consultar Pedidos </Link>
                        </li>
 
                        <li className="menu-vertical-item">
-                         <Link to="/verhistorial" className="menu-vertical-button">Confirmar Reservas  </Link>
+                         <Link to="/Confirmareservas" className="menu-vertical-button"> Confirmar Reservas  </Link>
+                       </li>
+
+                       <li className="menu-vertical-item">
+                         <Link to="/consultarreservas" className="menu-vertical-button">Consultar Reservas  </Link>
                        </li>
                     
 
@@ -80,12 +73,11 @@ export const Administrador = () => {
                        </li>
 
                        <li className="menu-vertical-item">
-                         <Link to="/contactar" className="menu-vertical-button">Modificar Ubicacion </Link>
+                         <Link to="/modificarubi" className="menu-vertical-button">Modificar Ubicacion </Link>
                        </li>
 
                      </ul>
                    </nav>
-            </main>
            
         </>
     );
