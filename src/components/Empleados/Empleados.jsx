@@ -1,9 +1,10 @@
 import React from 'react'
-import Header from './Header'
-import "./../Styles/Cliente.css"
-import "./../Styles/admi.css"
-import Footer from './Footer'
-import Proyecto from "./../assets/imagenes/proyect.png"
+
+
+
+import "./../../Styles/Cliente.css"
+import "./../../Styles/admi.css"
+import Proyecto from "./../../assets/imagenes/proyect.png"
 import { Link } from 'react-router-dom'
 
 export const Empleados = () => {
@@ -32,7 +33,7 @@ export const Empleados = () => {
           <Link to="/productos" className="menu-vertical-button">Ver productos</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/consultarpedido" className="menu-vertical-button">Confirmar pedidos</Link>
+          <Link to="/ConfirmarPedidos" className="menu-vertical-button">Confirmar pedidos</Link>
         </li>
         <li className="menu-vertical-item">
           <Link to="/modificarpedido" className="menu-vertical-button">Confirmar reservas</Link>
