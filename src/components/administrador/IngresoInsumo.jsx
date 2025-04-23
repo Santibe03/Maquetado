@@ -1,9 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import "./../Styles/admi-insu.css"
+import "./../../Styles/admi/admi-insu.css"
 
-export const Administradorinsumo = () => {
+export const IngresoInsumo = () => {
     return (
         <>
             
@@ -69,4 +67,4 @@ export const Administradorinsumo = () => {
     );
 };
 
-export default Administradorinsumo;
+export default IngresoInsumo;

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import Proyecto from "./../assets/imagenes/proyect.png"
 import "./../Styles/admi.css"
 
@@ -27,11 +25,11 @@ export const Administrador = () => {
                             {menuVisible && (
                                 <div id="dropdown" className="dropdown">
                                     <a href="/agregarinsumo">Agregar insumos</a>
-                                    <a href="#">Eliminar insumos</a>
-                                    <a href="#">Ver insumos</a>
-                                    <a href="#">Crear cuentas</a>
-                                    <a href="#">Administrar cuentas</a>
-                                    <a href="#">Ver opiniones, quejas o reclamos</a>
+                                    <a href="/eliminarinsumo">Eliminar insumos</a>
+                                    <a href="/verinsumo">Ver insumos</a>
+                                    <a href="/crearcuenta">Crear cuentas</a>
+                                    <a href="/administrarcuentas">Administrar cuentas</a>
+                                    <a href="/buzonsugerencias">buzon de zugerencias</a>
                                     <a href="#">Desactivar cuentas</a>
                                     <a href="#">Revisar cuentas</a>
                                     <a href="#">Confirmar pedidos</a>
