@@ -1,7 +1,7 @@
 import React from 'react';
-import './../Styles/HistorialPedidos.css';
-import Header from './Header';
-import Footer from './Footer';
+import './../../Styles/Cliente/HistorialPedidos.css';
+import Header from '../Header';
+import Footer from '../Footer';
 
 function HistorialPedidos() {
     const historial = [

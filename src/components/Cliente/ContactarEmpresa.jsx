@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './../Styles/ContactarEmpresa.css'; // Archivo de estilos opcional
-import Header from './Header';
-import Footer from './Footer';
+import './../../Styles/Cliente/ContactarEmpresa.css'; // Archivo de estilos opcional
+import Header from '../Header';
+import Footer from '../Footer';
 
 function ContactarEmpresa() {
     const [nombre, setNombre] = useState('');

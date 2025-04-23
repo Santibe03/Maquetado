@@ -1,9 +1,7 @@
 import React from 'react'
-import Header from './Header'
-import "./../Styles/Cliente.css"
-import "./../Styles/admi.css"
-import Footer from './Footer'
-import Proyecto from "./../assets/imagenes/proyect.png"
+import "./../../Styles/Cliente/Cliente.css"
+import "./../../Styles/admi.css"
+import Proyecto from "./../../assets/imagenes/proyect.png"
 import { Link } from 'react-router-dom'
 
 export const Cliente = () => {

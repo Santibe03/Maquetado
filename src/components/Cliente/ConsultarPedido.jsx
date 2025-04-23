@@ -1,5 +1,5 @@
 import React from 'react';
-import './../Styles/PedidoDetalle.css'; // Archivo de estilos opcional
+import './../../Styles/Cliente/PedidoDetalle.css'; // Archivo de estilos opcional
 
 
 export const PedidoSencillo = () => {

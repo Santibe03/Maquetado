@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-import "./../../Styles/Cliente.css"
+import "./../../Styles/Cliente/Cliente.css"
 import "./../../Styles/admi.css"
 import Proyecto from "./../../assets/imagenes/proyect.png"
 import { Link } from 'react-router-dom'
