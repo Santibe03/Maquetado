@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './../Styles/CancelarPedido.css'; // Archivo de estilos opcional
-import Header from './Header';
-import Footer from './Footer';
+import './../../Styles/Cliente/CancelarPedido.css'; 
+
 
 function CancelarPedido() {
     const location = useLocation();

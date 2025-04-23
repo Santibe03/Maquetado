@@ -1,8 +1,6 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
-import Proyecto from './../assets/imagenes/proyect.png'; // Asegúrate de que la ruta sea correcta
+import Proyecto from './../../assets/imagenes/proyect.png'; 
 
 function PedidoCancelado() {
     const location = useLocation();
