@@ -20,8 +20,9 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Productos from './components/Productos'
 import ConfirmarPedidos from './components/Empleados/ConfirmarPedidos'
-
-
+import ConfirmarReservas from './components/Empleados/ConfirmarReservas.jsx'
+import CancelarReservas from './components/Empleados/CancelarReservas.jsx'
+import ContactarAdministrador from './components/Empleados/ContactarAdministrador.jsx'
 
 
 
@@ -48,6 +49,10 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contactar" element={<ContactarEmpresa />} />
         <Route path="/productos" element={<Productos />}/>
         <Route path="/ConfirmarPedidos" element={<ConfirmarPedidos />} />
+        <Route path="/ConfirmarReservas" element={<ConfirmarReservas />} />
+        <Route path="/CancelarReservas" element={<CancelarReservas />} />
+        <Route path="/ContactarAdministrador" element={<ContactarAdministrador />} />
+
       </Routes>
     </BrowserRouter>
     <Footer/>
