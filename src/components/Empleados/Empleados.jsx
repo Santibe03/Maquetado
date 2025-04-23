@@ -36,16 +36,16 @@ export const Empleados = () => {
           <Link to="/ConfirmarPedidos" className="menu-vertical-button">Confirmar pedidos</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/modificarpedido" className="menu-vertical-button">Confirmar reservas</Link>
+          <Link to="/ConfirmarReservas" className="menu-vertical-button">Confirmar reservas</Link>
         </li>
         <li className="menu-vertical-item">
           <Link to="/cancelarpedido" className="menu-vertical-button">Cancelar pedido</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/verhistorial" className="menu-vertical-button">Cancelar reservas</Link>
+          <Link to="/CancelarReservas" className="menu-vertical-button">Cancelar reservas</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/contactar" className="menu-vertical-button">Contactar con el administrador</Link>
+          <Link to="/ContactarAdministrador" className="menu-vertical-button">Contactar con el administrador</Link>
         </li>
       </ul>
     </nav>
