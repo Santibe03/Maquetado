@@ -1,0 +1,75 @@
+/* CancelarPedido.css */
+.cancelar-pedido-container {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.cancelar-pedido-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #dc3545;
+}
+
+.cancelar-pedido-container p {
+    margin-bottom: 10px;
+}
+
+.detalle-cancelar {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.detalle-cancelar strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.cancelar-pedido-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+}
+
+.cancelar-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.confirmar-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.rechazar-button {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.volver-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.confirmacion-cancelar {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.confirmacion-cancelar p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}

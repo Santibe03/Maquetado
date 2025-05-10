@@ -1,21 +1,22 @@
 import React from 'react'
-import proyecto from "./../assets/imagenes/proyect.png"
-import "./../Styles/Header.css"
+import proyecto from "./../assets/imagenes/logo.png"
+import "./../Styles/header.css"
 
 export const Header = () => {
   return (
     <header>
     <div className="top">
-      <img src={proyecto} alt="logo" className="logo"style={{ width: '100px', height: 'auto' }} />
-      <h1>INVENTORYIND AND COUNING</h1>
+      <img src={proyecto} alt="logo" className="logo" />
+      <a href='/home'>INVENTORING AND COUNTING</a>
       <div className="una">
         <input type="text" placeholder="Buscar..." />
         <button>🔍</button>
       </div>
 
       <div className="iconos">
-        <a href="/cuenta">👤 Mi cuenta</a>
-        <a href="/carrito">🛒 Añadir al carrito</a>
+        <a href="/cuenta">👤 Iniciar sesión </a>
+        <a href="/Registro">📝 Registrarme </a>
+
       </div>
     </div>
     <nav>

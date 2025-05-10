@@ -1,0 +1,60 @@
+/* ModificarPedido.css */
+.modificar-pedido-container {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .modificar-pedido-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .modificar-pedido-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .modificar-pedido-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .modificar-pedido-form input[type="text"],
+  .modificar-pedido-form input[type="number"],
+  .modificar-pedido-form textarea,
+  .modificar-pedido-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  .modificar-pedido-form textarea {
+    resize: vertical;
+  }
+  
+  .modificar-pedido-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+  }
+  
+  .modificar-pedido-form .cancelar-button {
+    background-color: #dc3545;
+  }
+  
+  .modificar-pedido-form button:hover {
+    opacity: 0.9;
+  }
