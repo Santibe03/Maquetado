@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import './../../Styles/Cliente/ModificarPedido.css'; // Archivo de estilos opcional
-import Header from '../Header';
-import Footer from '../Footer';
+import { useNavigate } from 'react-router-dom';
+import { usePedido } from './../../context/PedidoContext';
+import './../../Styles/Cliente/ModificarPedido.css';
 
 function ModificarPedido() {
-    const location = useLocation();
     const navigate = useNavigate();
-    const pedidoInicial = location.state?.pedido;
+    const { pedido, setPedido } = usePedido();
 
-    // Estado para almacenar los valores del formulario
     const [nombreProducto, setNombreProducto] = useState('');
     const [cantidad, setCantidad] = useState(1);
     const [descripcion, setDescripcion] = useState('');
@@ -17,15 +14,14 @@ function ModificarPedido() {
     const [direccionEnvio, setDireccionEnvio] = useState('');
 
     useEffect(() => {
-        // Carga los datos del pedido inicial en el estado del formulario
-        if (pedidoInicial) {
-            setNombreProducto(pedidoInicial.nombreProducto || '');
-            setCantidad(pedidoInicial.cantidad || 1);
-            setDescripcion(pedidoInicial.descripcion || '');
-            setMetodoPago(pedidoInicial.metodoPago || '');
-            setDireccionEnvio(pedidoInicial.direccionEnvio || '');
+        if (pedido) {
+            setNombreProducto(pedido.nombreProducto || '');
+            setCantidad(pedido.cantidad || 1);
+            setDescripcion(pedido.descripcion || '');
+            setMetodoPago(pedido.metodoPago || '');
+            setDireccionEnvio(pedido.direccionEnvio || '');
         }
-    }, [pedidoInicial]);
+    }, [pedido]);
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -52,27 +48,24 @@ function ModificarPedido() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Aquí puedes realizar la lógica para enviar los datos modificados del pedido
+
         const pedidoModificado = {
             nombreProducto,
             cantidad,
             descripcion,
             metodoPago,
-            direccionEnvio,
-            // ... otros campos que puedas tener ...
+            direccionEnvio
         };
-        console.log('Pedido Modificado:', pedidoModificado);
-        // Después de guardar los cambios, podrías redirigir al usuario
-        navigate('/consultarpedido', { state: { pedido: pedidoModificado } });
+
+        setPedido(pedidoModificado); // ACTUALIZAR el contexto global
+        navigate('/consultarpedido'); // Redirigir
     };
 
     const handleCancelar = () => {
-        navigate('/consultarpedido', { state: { pedido: pedidoInicial } });
+        navigate('/consultarpedido');
     };
 
     return (
-        <>
-        
         <div className="modificar-pedido-container">
             <h2>Modificar Pedido</h2>
             <form onSubmit={handleSubmit} className="modificar-pedido-form">
@@ -121,7 +114,6 @@ function ModificarPedido() {
                         <option value="efectivo">Efectivo</option>
                         <option value="tarjeta_credito">Tarjeta de Crédito</option>
                         <option value="transferencia">Transferencia Bancaria</option>
-                        {/* Puedes añadir más opciones de pago */}
                     </select>
                 </div>
                 <div className="form-group">
@@ -139,8 +131,6 @@ function ModificarPedido() {
                 <button type="button" className="cancelar-button" onClick={handleCancelar}>Cancelar</button>
             </form>
         </div>
-        
-        </>
     );
 }
 
