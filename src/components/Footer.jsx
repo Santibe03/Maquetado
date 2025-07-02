@@ -10,8 +10,8 @@ export const Footer = () => {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-section about">
-                    <h2>MiSitio</h2>
-                    <p>Somos una empresa dedicada a ofrecer soluciones tecnológicas innovadoras para mejorar tu día a día.</p>
+                    <h2>INVENTORING AND COUNTING</h2>
+                    <p>Somos una plataforma innovadora que se encarga de la gestion de productos, insumos y pedidos </p>
                 </div>
                 <div className="footer-section contact">
                     <h3>Contacto</h3>
@@ -30,7 +30,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; 2025 MiSitio. Todos los derechos reservados.</p>
+                <p>&copy; 2025 INVENTORING AND COUNTING. Todos los derechos reservados.</p>
             </div>
         </footer>
     )
