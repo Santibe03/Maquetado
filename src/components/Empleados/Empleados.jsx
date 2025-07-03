@@ -33,16 +33,10 @@ export const Empleados = () => {
           <Link to="/productos" className="menu-vertical-button">Ver productos</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/ConfirmarPedidos" className="menu-vertical-button">Confirmar pedidos</Link>
+          <Link to="/gestionarpedidos" className="menu-vertical-button">Gestionar Pedidos</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/ConfirmarReservas" className="menu-vertical-button">Confirmar reservas</Link>
-        </li>
-        <li className="menu-vertical-item">
-          <Link to="/cancelarpedido" className="menu-vertical-button">Cancelar pedido</Link>
-        </li>
-        <li className="menu-vertical-item">
-          <Link to="/CancelarReservas" className="menu-vertical-button">Cancelar reservas</Link>
+          <Link to="/gestionareservas" className="menu-vertical-button">Gestionar Reservas</Link>
         </li>
         <li className="menu-vertical-item">
           <Link to="/ContactarAdministrador" className="menu-vertical-button">Contactar con el administrador</Link>

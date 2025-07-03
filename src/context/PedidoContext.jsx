@@ -1,29 +1,75 @@
-import React, { createContext, useState, useContext, useEffect } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
-// Crear el contexto
 const PedidoContext = createContext();
 
-// Proveedor del contexto
 export const PedidoProvider = ({ children }) => {
-  // Cargar desde localStorage si existe, o usar null
   const pedidoGuardado = JSON.parse(localStorage.getItem("pedido")) || null;
-  const [pedido, setPedido] = useState(pedidoGuardado);
+  const historialGuardado = JSON.parse(localStorage.getItem("historialPedidos")) || [];
 
-  // Guardar en localStorage cada vez que el pedido cambie
+  const [pedido, setPedido] = useState(pedidoGuardado);
+  const [historialPedidos, setHistorialPedidos] = useState(historialGuardado);
+
   useEffect(() => {
-    if (pedido) {
-      localStorage.setItem("pedido", JSON.stringify(pedido));
-    }
+    localStorage.setItem("pedido", JSON.stringify(pedido));
   }, [pedido]);
 
+  useEffect(() => {
+    localStorage.setItem("historialPedidos", JSON.stringify(historialPedidos));
+  }, [historialPedidos]);
+
+  const agregarPedidoAlHistorial = (nuevoPedido) => {
+    const pedidoConId = {
+      ...nuevoPedido,
+      id: Date.now(),
+      estado: "Pendiente",
+      fecha: new Date().toISOString().split("T")[0],
+    };
+    setHistorialPedidos((prev) => [...prev, pedidoConId]);
+    setPedido(pedidoConId);
+  };
+
+  const confirmarPedido = (id) => {
+    setHistorialPedidos((prev) =>
+      prev.map((p) =>
+        p.id === id ? { ...p, estado: "Confirmado" } : p
+      )
+    );
+  };
+
+  const cancelarPedido = (id) => {
+    setHistorialPedidos((prev) =>
+      prev.map((p) =>
+        p.id === id ? { ...p, estado: "Cancelado" } : p
+      )
+    );
+  };
+
+  const modificarPedido = (pedidoModificado) => {
+    setHistorialPedidos((prev) =>
+      prev.map((p) =>
+        p.id === pedidoModificado.id ? { ...pedidoModificado } : p
+      )
+    );
+    setPedido(pedidoModificado);
+  };
+
   return (
-    <PedidoContext.Provider value={{ pedido, setPedido }}>
+    <PedidoContext.Provider
+      value={{
+        pedido,
+        setPedido,
+        historialPedidos,
+        agregarPedidoAlHistorial,
+        confirmarPedido,
+        cancelarPedido,
+        modificarPedido,
+      }}
+    >
       {children}
     </PedidoContext.Provider>
   );
 };
 
-// Hook personalizado para usar el contexto fácilmente
 export const usePedido = () => useContext(PedidoContext);
 
 
