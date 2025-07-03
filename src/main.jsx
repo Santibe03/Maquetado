@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // CONTEXTOS
 import { PedidoProvider } from './context/PedidoContext'
+import { ReservaProvider } from './context/ReservaContext'
 
 // componentes...
 import Header from './components/Header'
@@ -17,25 +18,26 @@ import Registro from './components/Registro'
 import IngresoInsumo from './components/administrador/IngresoInsumo.jsx'
 import RealizarPedido from './components/Cliente/RealizarPedido.jsx'
 import ConsultarPedido from './components/Cliente/ConsultarPedido.jsx'
-import CancelarPedido from './components/Cliente/CancelarPedido'
-import ModificarPedido from './components/Cliente/ModificarPedido.jsx'
-import PedidoCancelado from './components/Cliente/PedidoCancelado'
 import HistorialPedidos from './components/Cliente/HistorialPedidos.jsx'
 import ContactarEmpresa from './components/Cliente/ContactarEmpresa.jsx'
 import Productos from './components/Productos'
-import ConfirmarPedidos from './components/Empleados/ConfirmarPedidos'
-import ConfirmarReservas from './components/Empleados/ConfirmarReservas.jsx'
-import CancelarReservas from './components/Empleados/CancelarReservas.jsx'
 import ContactarAdministrador from './components/Empleados/ContactarAdministrador.jsx'
 import EliminarInsumo from './components/administrador/EliminarInsumo'
 import VerInsumo from './components/administrador/VerInsumo'
 import CrearCuenta from './components/administrador/CrearCuenta'
 import AdministrarCuentas from './components/administrador/AdministrarCuentas'
 import BuzonSugerencias from './components/administrador/BuzonSugerencias'
+import RealizarReserva from './components/Cliente/RealizarReserva.jsx'
+import ReservaSencilla from './components/Cliente/ReservaSencilla';
+import HistorialReservas from './components/Cliente/HistorialReservas';
+import GestionarPedidos from './components/Empleados/GestionarPedidos';
+import GestionarReservas from './components/Empleados/GestionarReservas';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <PedidoProvider> {/* ENVOLVEMOS TODO CON EL CONTEXTO */}
+    <PedidoProvider>
+      <ReservaProvider>
       <Header />
       <BrowserRouter>
         <Routes>
@@ -49,24 +51,24 @@ createRoot(document.getElementById('root')).render(
           <Route path="/agregarinsumo" element={<IngresoInsumo />} />
           <Route path="/realizarpedido" element={<RealizarPedido />} />
           <Route path="/consultarpedido" element={<ConsultarPedido />} />
-          <Route path="/modificarpedido" element={<ModificarPedido />} />
-          <Route path="/cancelarpedido" element={<CancelarPedido />} />
-          <Route path="/pedidocancelado" element={<PedidoCancelado />} />
           <Route path="/verhistorial" element={<HistorialPedidos />} />
           <Route path="/contactar" element={<ContactarEmpresa />} />
           <Route path="/productos" element={<Productos />} />
-          <Route path="/ConfirmarPedidos" element={<ConfirmarPedidos />} />
-          <Route path="/ConfirmarReservas" element={<ConfirmarReservas />} />
-          <Route path="/CancelarReservas" element={<CancelarReservas />} />
           <Route path="/ContactarAdministrador" element={<ContactarAdministrador />} />
           <Route path="/eliminarinsumo" element={<EliminarInsumo />} />
           <Route path="/verinsumo" element={<VerInsumo />} />
           <Route path="/crearcuenta" element={<CrearCuenta />} />
           <Route path="/administrarcuentas" element={<AdministrarCuentas />} />
           <Route path="/buzonsugerencias" element={<BuzonSugerencias />} />
+          <Route path="/realizarreserva" element={<RealizarReserva />} />
+          <Route path="/reservadetalle" element={<ReservaSencilla />} />
+          <Route path="/historialreservas" element={<HistorialReservas />} />
+          <Route path="/gestionarpedidos" element={<GestionarPedidos />} />
+          <Route path="/gestionareservas" element={<GestionarReservas />} />
         </Routes>
       </BrowserRouter>
       <Footer />
+      </ReservaProvider>
     </PedidoProvider>
   </StrictMode>
 )

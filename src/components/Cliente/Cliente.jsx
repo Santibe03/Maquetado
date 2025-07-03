@@ -30,16 +30,13 @@ export const Cliente = () => {
           <Link to="/realizarpedido" className="menu-vertical-button">Realizar pedido</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/consultarpedido" className="menu-vertical-button">Consultar pedido</Link>
+          <Link to="/verhistorial" className="menu-vertical-button">Consultar Pedidos</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/modificarpedido" className="menu-vertical-button">Modificar pedido</Link>
+          <Link to="/realizarreserva" className="menu-vertical-button">Realizar Reserva</Link>
         </li>
         <li className="menu-vertical-item">
-          <Link to="/cancelarpedido" className="menu-vertical-button">Cancelar pedido</Link>
-        </li>
-        <li className="menu-vertical-item">
-          <Link to="/verhistorial" className="menu-vertical-button">Ver historial de pedidos</Link>
+          <Link to="/historialreservas" className="menu-vertical-button">Consultar Reservas</Link>
         </li>
         <li className="menu-vertical-item">
           <Link to="/contactar" className="menu-vertical-button">Contactar con la empresa</Link>
