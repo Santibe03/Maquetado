@@ -41,6 +41,9 @@ export const Empleados = () => {
         <li className="menu-vertical-item">
           <Link to="/ContactarAdministrador" className="menu-vertical-button">Contactar con el administrador</Link>
         </li>
+        <li className="menu-vertical-item">
+          <Link to="/verinsumo" className="menu-vertical-button">Inventario de insumos</Link>
+        </li>
       </ul>
     </nav>
     </div>
