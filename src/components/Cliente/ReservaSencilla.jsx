@@ -13,6 +13,7 @@ const ReservaSencilla = () => {
       <p><strong>Cliente:</strong> {reserva.nombreCliente}</p>
       <p><strong>Fecha de Reserva:</strong> {reserva.fechaReserva}</p>
       <p><strong>Fecha del Evento:</strong> {reserva.fechaEvento}</p>
+      <p><strong>Hora:</strong> {reserva.horaReserva}</p>
       <p><strong>Número de Personas:</strong> {reserva.personas}</p>
       <p><strong>Mesa:</strong> {reserva.mesa}</p>
       <p><strong>Estado:</strong> {reserva.estado}</p>
