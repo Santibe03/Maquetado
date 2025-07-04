@@ -45,6 +45,7 @@ const HistorialReservas = () => {
               <th>Nombre</th>
               <th>Fecha de Registro</th>
               <th>Fecha del Evento</th>
+              <th>Hora de Reserva</th>
               <th>Personas</th>
               <th>Mesa</th>
               <th>Estado</th>
@@ -73,10 +74,18 @@ const HistorialReservas = () => {
                       />
                     </td>
                     <td>
+                    <input
+                      type="date"
+                      value={reservaEditando.fechaEvento}
+                      onChange={(e) => handleEditarChange(e, 'fechaEvento')}
+                      min={new Date().toISOString().split('T')[0]} // ← fecha mínima = hoy
+                    />
+                    </td>
+                    <td>
                       <input
-                        type="date"
-                        value={reservaEditando.fechaEvento}
-                        onChange={(e) => handleEditarChange(e, 'fechaEvento')}
+                        type="time"
+                        value={reservaEditando.horaReserva}
+                        onChange={(e) => handleEditarChange(e, 'horaReserva')}
                       />
                     </td>
                     <td>
@@ -103,6 +112,7 @@ const HistorialReservas = () => {
                     <td>{reserva.nombreCliente}</td>
                     <td>{reserva.fechaReserva}</td>
                     <td>{reserva.fechaEvento}</td>
+                    <td>{reserva.horaReserva}</td>
                     <td>{reserva.personas}</td>
                     <td>{reserva.mesa}</td>
                     <td>{reserva.estado}</td>
