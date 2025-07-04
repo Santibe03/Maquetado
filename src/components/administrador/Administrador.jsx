@@ -29,7 +29,7 @@ export const Administrador = () => {
                 <ul className="menu-vertical-list">
                     <li className="menu-vertical-item">
 
-                        <Link to="/adminiingresoinsumo" className="menu-vertical-button">Agregar Insumos </Link>
+                        <Link to="/inventario"className="menu-vertical-button">Inventario de Insumos </Link>
                     </li>
                     <li className="menu-vertical-item">
                         <Link to="/consultarpedido" className="menu-vertical-button">Eliminar Insumo</Link>

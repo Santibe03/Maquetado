@@ -5,6 +5,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // CONTEXTOS
 import { PedidoProvider } from './context/PedidoContext'
 import { ReservaProvider } from './context/ReservaContext'
+import { InsumoProvider } from './context/InsumoContext';
+
+
 
 // componentes...
 import Header from './components/Header'
@@ -23,7 +26,6 @@ import ContactarEmpresa from './components/Cliente/ContactarEmpresa.jsx'
 import Productos from './components/Productos'
 import ContactarAdministrador from './components/Empleados/ContactarAdministrador.jsx'
 import EliminarInsumo from './components/administrador/EliminarInsumo'
-import VerInsumo from './components/administrador/VerInsumo'
 import CrearCuenta from './components/administrador/CrearCuenta'
 import AdministrarCuentas from './components/administrador/AdministrarCuentas'
 import BuzonSugerencias from './components/administrador/BuzonSugerencias'
@@ -32,11 +34,14 @@ import ReservaSencilla from './components/Cliente/ReservaSencilla';
 import HistorialReservas from './components/Cliente/HistorialReservas';
 import GestionarPedidos from './components/Empleados/GestionarPedidos';
 import GestionarReservas from './components/Empleados/GestionarReservas';
+import InventarioInsumos from './components/administrador/InventarioInsumos';
+import VerInsumo from './components/Empleados/VerInsumo';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <PedidoProvider>
+      <InsumoProvider>
       <ReservaProvider>
       <Header />
       <BrowserRouter>
@@ -56,7 +61,6 @@ createRoot(document.getElementById('root')).render(
           <Route path="/productos" element={<Productos />} />
           <Route path="/ContactarAdministrador" element={<ContactarAdministrador />} />
           <Route path="/eliminarinsumo" element={<EliminarInsumo />} />
-          <Route path="/verinsumo" element={<VerInsumo />} />
           <Route path="/crearcuenta" element={<CrearCuenta />} />
           <Route path="/administrarcuentas" element={<AdministrarCuentas />} />
           <Route path="/buzonsugerencias" element={<BuzonSugerencias />} />
@@ -65,10 +69,13 @@ createRoot(document.getElementById('root')).render(
           <Route path="/historialreservas" element={<HistorialReservas />} />
           <Route path="/gestionarpedidos" element={<GestionarPedidos />} />
           <Route path="/gestionareservas" element={<GestionarReservas />} />
+          <Route path="/inventario" element={<InventarioInsumos />} />
+          <Route path="/verinsumo" element={<VerInsumo />} />
         </Routes>
       </BrowserRouter>
       <Footer />
       </ReservaProvider>
+      </InsumoProvider>
     </PedidoProvider>
   </StrictMode>
 )
