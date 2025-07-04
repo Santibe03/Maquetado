@@ -1,6 +1,7 @@
 import React from 'react';
 import "./../../Styles/admi/admi-insu.css"
 
+
 export const IngresoInsumo = () => {
     return (
         <>
