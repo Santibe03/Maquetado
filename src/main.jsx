@@ -15,7 +15,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Body from './components/Body'
 import MiCuenta from './components/MiCuenta'
-import Administrador from './components/administrador/administrador.jsx'
+import Administrador from './components/administrador/Administrador.jsx'
 import Empleados from './components/Empleados/Empleados.jsx'
 import Cliente from './components/Cliente/Cliente.jsx'
 import Registro from './components/Registro'
@@ -38,6 +38,14 @@ import GestionarReservas from './components/Empleados/GestionarReservas';
 import InventarioInsumos from './components/administrador/InventarioInsumos';
 import VerInsumo from './components/Empleados/VerInsumo';
 import VerProductos from './components/Empleados/VerProductos';
+import InsumosAdmin from './components/administrador/InsumosAdmin';
+
+
+
+
+
+
+
 
 
 createRoot(document.getElementById('root')).render(
@@ -75,6 +83,10 @@ createRoot(document.getElementById('root')).render(
           <Route path="/inventario" element={<InventarioInsumos />} />
           <Route path="/verinsumo" element={<VerInsumo />} />
           <Route path="/verproductos" element={<VerProductos />} />
+          <Route path="/insumoadmin" element={<InsumosAdmin />} />
+
+
+
         </Routes>
       </BrowserRouter>
       <Footer />

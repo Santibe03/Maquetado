@@ -137,4 +137,26 @@ body {
     align-items: center;
     padding: 20px;
   }
+
+  .fondo-admin {
+    background-image: url('../assets/imagenes/proyect.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* 👇 Fondo blanco semiopaco SOLO para el contenido */
+  .fondo-admin > * {
+    background-color: rgba(255, 255, 255, 0.94); /* blanco con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contenido-claro {
+    background-color: rgba(255, 255, 255, 0.95); /* Color actual muy claro */
+  }
   

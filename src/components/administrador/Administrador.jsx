@@ -1,87 +1,71 @@
-
-
-import "./../../Styles/Cliente/Cliente.css"
-import Proyecto from "./../../assets/imagenes/proyect.png"
-import { Link } from 'react-router-dom'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Proyecto from './../../assets/imagenes/proyect.png'; 
+import './../../Styles/Cliente/Cliente.css';
+import './../../Styles/admi.css'; 
 export const Administrador = () => {
-    return (
-        <>
+  return (
+    <div className="fondo-admin">
+      <header className="br">
+        <div className="lados"></div>
+        <div className="navcentro">
+          <span>Administrador 👤</span>
+        </div>
+      </header>
 
-            <div>
-                <header className="br">
-                    <div className="lados"></div>
-                    <div className="navcentro">
-                        <span>Administrador  👤</span>
-                    </div>
-                </header>
+      <div className="cliente contenido-claro">
+        <div>
+          <p>Bienvenido a la sección de Administrador.</p>
+          <p>Aquí podrás gestionar insumos, cuentas, pedidos, reservas y más.</p>
+          <p>Si tienes alguna duda, no dudes en ponerte en contacto con nosotros.</p>
+          <p>¡Gracias por elegirnos!</p>
+        </div>
 
-            </div>
-            <div className='cliente'>
-                <div>
-                    <p>Bienvenido a la seccion de Administrador.</p>
-                    <p>Aqui podras gestionar las diferentes actividades del negocio.</p>
-                    <p>Gracias por elegirnos </p>
-                </div>
+        <nav className="menu-vertical-container">
+          <ul className="menu-vertical-list">
+            <li className="menu-vertical-item">
+            <Link to="/insumoadmin" className="menu-vertical-button">Insumos</Link>
+            </li>
+            <li className="menu-vertical-item">
+              <Link to="/crearcuenta" className="menu-vertical-button">Cuentas</Link>
+            </li>
+            <li className="menu-vertical-item">
+              <Link to="/confirmarpedidos" className="menu-vertical-button">Pedidos</Link>
+            </li>
+            <li className="menu-vertical-item">
+              <Link to="/confirmarreservas" className="menu-vertical-button">Reservas</Link>
+            </li>
+            <li className="menu-vertical-item">
+              <Link to="/modificarcontacto" className="menu-vertical-button">Configuración</Link>
+            </li>
+            <li className="menu-vertical-item">
+              <Link to="/sugerencias" className="menu-vertical-button">Otros</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
+      <h1>Productos</h1>
+      <main className="contenido-claro">
+        {[1, 2, 3].map((_, idx) => (
+          <section key={idx} className="productos">
+            {Array(4).fill().map((_, i) => (
+              <div key={i} className="productos2">
+                <div className="imagenproducto"></div>
+                <h3>Categoría</h3>
+                <p>Nombre del producto</p>
+                <span className="valor">$$$</span>
+              </div>
+            ))}
+          </section>
+        ))}
+      </main>
 
-            <nav className="menu-center-container">
-                <ul className="menu-vertical-list">
-                    <li className="menu-vertical-item">
-
-                        <Link to="/inventario"className="menu-vertical-button">Inventario de Insumos </Link>
-                    </li>
-                    <li className="menu-vertical-item">
-                        <Link to="/consultarpedido" className="menu-vertical-button">Eliminar Insumo</Link>
-                    </li>
-
-                    <li className="menu-vertical-item">
-                        <Link to="/micuenta" className="menu-vertical-button">Ver Insumo </Link>
-                    </li>
-                    <li className="menu-vertical-item">
-                        <Link to="/cancelarpedido" className="menu-vertical-button">Crear cuenta</Link>
-                    </li>
-                    <li className="menu-vertical-item">
-                        <Link to="/verhistorial" className="menu-vertical-button">Administrar Cuenta </Link>
-                    </li>
-                    <li className="menu-vertical-item">
-                        <Link to="/verhistorial" className="menu-vertical-button">Buzon de sugerencias  </Link>
-                    </li>
-
-                    <li className="menu-vertical-item">
-                        <Link to="/confirmarpedidos" className="menu-vertical-button">Confirmar Pedidos </Link>
-                    </li>
-
-                    <li className="menu-vertical-item">
-                        <Link to="/verhistorial" className="menu-vertical-button">Consultar Pedidos </Link>
-                    </li>
-
-                    <li className="menu-vertical-item">
-                        <Link to="/Confirmareservas" className="menu-vertical-button"> Confirmar Reservas  </Link>
-                    </li>
-
-                    <li className="menu-vertical-item">
-                        <Link to="/consultarreservas" className="menu-vertical-button">Consultar Reservas  </Link>
-                    </li>
-
-
-                    <li className="menu-vertical-item">
-                        <Link to="/contactar" className="menu-vertical-button">Modificar contacto con la empresa </Link>
-                    </li>
-
-                    <li className="menu-vertical-item">
-                        <Link to="/modificarubi" className="menu-vertical-button">Modificar Ubicacion </Link>
-                    </li>
-
-                </ul>
-            </nav>
-            </div>
-
-            <section className="section1">
-                <img src={Proyecto} alt="" className="image" />
-            </section>
-        </>
-    );
+      <section className="section1 contenido-claro">
+        <img src={Proyecto} alt="Proyecto" className="image" />
+      </section>
+    </div>
+  );
 };
 
 export default Administrador;
