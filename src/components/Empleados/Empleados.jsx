@@ -30,7 +30,7 @@ export const Empleados = () => {
       <nav className="menu-vertical-container">
       <ul className="menu-vertical-list">
         <li className="menu-vertical-item">
-          <Link to="/productos" className="menu-vertical-button">Ver productos</Link>
+          <Link to="/verproductos" className="menu-vertical-button">Ver productos</Link>
         </li>
         <li className="menu-vertical-item">
           <Link to="/gestionarpedidos" className="menu-vertical-button">Gestionar Pedidos</Link>

@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // CONTEXTOS
 import { PedidoProvider } from './context/PedidoContext'
 import { ReservaProvider } from './context/ReservaContext'
-import { InsumoProvider } from './context/InsumoContext';
+import { InsumoProvider } from './context/InsumoContext'
+import { ProductoProvider } from './context/ProductoContext';
 
 
 
@@ -36,6 +37,7 @@ import GestionarPedidos from './components/Empleados/GestionarPedidos';
 import GestionarReservas from './components/Empleados/GestionarReservas';
 import InventarioInsumos from './components/administrador/InventarioInsumos';
 import VerInsumo from './components/Empleados/VerInsumo';
+import VerProductos from './components/Empleados/VerProductos';
 
 
 createRoot(document.getElementById('root')).render(
@@ -43,6 +45,7 @@ createRoot(document.getElementById('root')).render(
     <PedidoProvider>
       <InsumoProvider>
       <ReservaProvider>
+        <ProductoProvider>
       <Header />
       <BrowserRouter>
         <Routes>
@@ -71,9 +74,11 @@ createRoot(document.getElementById('root')).render(
           <Route path="/gestionareservas" element={<GestionarReservas />} />
           <Route path="/inventario" element={<InventarioInsumos />} />
           <Route path="/verinsumo" element={<VerInsumo />} />
+          <Route path="/verproductos" element={<VerProductos />} />
         </Routes>
       </BrowserRouter>
       <Footer />
+        </ProductoProvider>
       </ReservaProvider>
       </InsumoProvider>
     </PedidoProvider>

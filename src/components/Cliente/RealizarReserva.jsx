@@ -32,10 +32,6 @@ function RealizarReserva() {
           <input type="text" id="nombreCliente" name="nombreCliente" required />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="fechaReserva">Fecha de Registro de Reserva:</label>
-          <input type="date" id="fechaReserva" name="fechaReserva" required />
-        </div>
 
         <div className="form-group">
           <label htmlFor="fechaEvento">Fecha del Evento:</label>
