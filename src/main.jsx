@@ -23,6 +23,7 @@ import ConfirmarPedidos from './components/ConfirmarPedidos'
 import ConfirmarReservas from './components/ConfirmarReservas'
 import ConsultarReservas from './components/ConsultarReservas'
 import ModificarUbi from './components/ModificarUbi'
+import InsumoS from './components/InsumoS'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header/>
@@ -67,6 +68,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/consultarreservas" element={<ConsultarReservas/>}/> 
 
         <Route path="/modificarubi" element={<ModificarUbi/>}/> 
+
+        <Route path="/insumos" element={<InsumoS />} />
+
 
 
       </Routes>

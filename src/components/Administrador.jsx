@@ -25,7 +25,9 @@ export const Administrador = () => {
         <nav className="menu-vertical-container">
           <ul className="menu-vertical-list">
             <li className="menu-vertical-item">
-              <Link to="/adminiingresoinsumo" className="menu-vertical-button">Insumos</Link>
+              
+            <Link to="/insumos" className="menu-vertical-button">Insumos</Link>
+
             </li>
             <li className="menu-vertical-item">
               <Link to="/crearcuenta" className="menu-vertical-button">Cuentas</Link>
