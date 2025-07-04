@@ -30,10 +30,11 @@ export const Administrador = () => {
               <Link to="/crearcuenta" className="menu-vertical-button">Cuentas</Link>
             </li>
             <li className="menu-vertical-item">
-              <Link to="/confirmarpedidos" className="menu-vertical-button">Pedidos</Link>
+              <Link to="/pedidosadmin" className="menu-vertical-button">Pedidos</Link>
+
             </li>
             <li className="menu-vertical-item">
-              <Link to="/confirmarreservas" className="menu-vertical-button">Reservas</Link>
+              <Link to="/gestionareservas" className="menu-vertical-button">Reservas</Link>
             </li>
             <li className="menu-vertical-item">
               <Link to="/modificarcontacto" className="menu-vertical-button">Configuración</Link>

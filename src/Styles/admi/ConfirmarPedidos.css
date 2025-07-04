@@ -1,0 +1,37 @@
+.formulario-confirmar {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.formulario-confirmar h2 {
+  text-align: center;
+}
+
+.formulario-confirmar label {
+  display: block;
+  margin-top: 15px;
+}
+
+.formulario-confirmar input,
+.formulario-confirmar select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.formulario-confirmar button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #2c8be4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

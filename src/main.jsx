@@ -39,6 +39,13 @@ import InventarioInsumos from './components/administrador/InventarioInsumos';
 import VerInsumo from './components/Empleados/VerInsumo';
 import VerProductos from './components/Empleados/VerProductos';
 import InsumosAdmin from './components/administrador/InsumosAdmin';
+import PedidosAdmin from './components/administrador/PedidosAdmin';
+import ConfirmarPedidos from "./components/administrador/ConfirmarPedidos";
+import ConsultarPedidos from "./components/administrador/ConsultarPedidos";
+
+
+
+
 
 
 
@@ -84,6 +91,10 @@ createRoot(document.getElementById('root')).render(
           <Route path="/verinsumo" element={<VerInsumo />} />
           <Route path="/verproductos" element={<VerProductos />} />
           <Route path="/insumoadmin" element={<InsumosAdmin />} />
+          <Route path="/pedidosadmin" element={<PedidosAdmin />} />
+          <Route path="/confirmarpedidos" element={<ConfirmarPedidos />} />
+          <Route path="/consultarpedidos" element={<ConsultarPedidos />} />
+
 
 
 
