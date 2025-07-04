@@ -35,6 +35,7 @@ const GestionarReservas = () => {
               <th>Nombre</th>
               <th>Fecha de Registro</th>
               <th>Fecha del Evento</th>
+              <th>Hora de Reserva</th>
               <th>Personas</th>
               <th>Mesa</th>
               <th>Estado</th>
@@ -48,6 +49,7 @@ const GestionarReservas = () => {
                 <td>{reserva.nombreCliente}</td>
                 <td>{reserva.fechaReserva}</td>
                 <td>{reserva.fechaEvento}</td>
+                <td>{reserva.horaReserva}</td>
                 <td>{reserva.personas}</td>
                 <td>{reserva.mesa}</td>
                 <td>{reserva.estado}</td>
