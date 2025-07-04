@@ -48,8 +48,8 @@ export const MiCuenta = () => {
           <h1>INVENTORYIND AND COUNTING</h1>
           <h2>BIENVENIDO</h2>
 
-          <input type="text" placeholder="Usuario" style={styles.input} />
-          <input type="password" placeholder="Contraseña" style={styles.input} />
+          <input type="text" placeholder="Usuario" style={styles.input} required/>
+          <input type="password" placeholder="Contraseña" style={styles.input} required />
 
           <button style={styles.button}>Ingresar</button>
 

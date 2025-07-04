@@ -49,21 +49,21 @@ export const Cliente = () => {
         <section className="productos">
           <div className="productos2">
             <div className="imagenproducto"></div>
-            <h3>Categoría</h3>
-            <p>Nombre del producto</p>
-            <span className="valor">$$$</span>
+            <h3>Granizado de Fresa</h3>
+            <p>Refrescante Granizado con sabor a fresa natural</p>
+            <span className="valor">$7000</span>
           </div>
           <div className="productos2">
             <div className="imagenproducto"></div>
-            <h3>Categoría</h3>
-            <p>Nombre del producto</p>
-            <span className="valor">$$$</span>
+            <h3>Caffe Latte</h3>
+            <p>Cafe suave con leche espumosa</p>
+            <span className="valor">$6000</span>
           </div>
           <div className="productos2">
             <div className="imagenproducto"></div>
-            <h3>Categoría</h3>
-            <p>Nombre del producto</p>
-            <span className="valor">$$$</span>
+            <h3>Granizado de Mango</h3>
+            <p>Granizado Tropical Dulce y Ácido</p>
+            <span className="valor">$7500</span>
           </div>
           <div className="productos2">
             <div className="imagenproducto"></div>

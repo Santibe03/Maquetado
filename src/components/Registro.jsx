@@ -20,13 +20,13 @@ export const Registro = () => {
       </select>
 
       <div className="row">
-        <input type="text" placeholder="Primer nombre" />
+        <input type="text" placeholder="Primer nombre" required />
         <input type="text" placeholder="Segundo nombre (Opcional)" />
       </div>
 
       <div className="row">
-        <input type="text" placeholder="Primer Apellido" />
-        <input type="text" placeholder="Segundo Apellido" />
+        <input type="text" placeholder="Primer Apellido"  required/>
+        <input type="text" placeholder="Segundo Apellido" required/>
       </div>
 
       <div className="row">
@@ -36,12 +36,12 @@ export const Registro = () => {
             <option>Cédula de extranjería</option>
             
         </select>
-        <input type="text" placeholder="N° de documento" />
+        <input type="text" placeholder="N° de documento" required/>
       </div>
 
-      <input type="email" placeholder="Email" className="full-width"/>
-      <input type="password" placeholder="Contraseña" className="full-width"/>
-      <input type="tel" placeholder="Telefono" className="full-width"/>
+      <input type="email" placeholder="Email" className="full-width"required/>
+      <input type="password" placeholder="Contraseña" className="full-width"required/>
+      <input type="tel" placeholder="Telefono" className="full-width"required/>
 
       <button type="submit">Registrarme</button>
     </form>

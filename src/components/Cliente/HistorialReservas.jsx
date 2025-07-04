@@ -69,6 +69,7 @@ const HistorialReservas = () => {
                         type="date"
                         value={reservaEditando.fechaReserva}
                         onChange={(e) => handleEditarChange(e, 'fechaReserva')}
+                        disabled = {true}
                       />
                     </td>
                     <td>
