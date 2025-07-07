@@ -42,6 +42,10 @@ import InsumosAdmin from './components/administrador/InsumosAdmin';
 import PedidosAdmin from './components/administrador/PedidosAdmin';
 import ConfirmarPedidos from "./components/administrador/ConfirmarPedidos";
 import ConsultarPedidos from "./components/administrador/ConsultarPedidos";
+import Configuracion from './components/administrador/Configuracion';
+import ModificarContacto from './components/administrador/ModificarContacto';
+import ModificarUbicacion from './components/administrador/ModificarUbicacion';
+import Sugerencias from './components/administrador/Sugerencias';
 
 
 
@@ -94,6 +98,10 @@ createRoot(document.getElementById('root')).render(
           <Route path="/pedidosadmin" element={<PedidosAdmin />} />
           <Route path="/confirmarpedidos" element={<ConfirmarPedidos />} />
           <Route path="/consultarpedidos" element={<ConsultarPedidos />} />
+          <Route path="/modificarcontacto" element={<Configuracion />} />
+          <Route path="/modificar-contacto" element={<ModificarContacto />} />
+          <Route path="/modificar-ubicacion" element={<ModificarUbicacion />} />
+          <Route path="/sugerencias" element={<Sugerencias />} />
 
 
 

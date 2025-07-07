@@ -1,29 +1,58 @@
-.inventario-container {
-  max-width: 700px;
-  margin: auto;
-  padding: 30px;
-  background: #fdfdfd;
-  border-radius: 12px;
+.contenedor-insumos {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  text-align: center;
 }
 
-.form-insumo {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+.titulo-insumos {
+  font-size: 2rem;
+  color: #4b49ac;
+  margin-bottom: 2rem;
 }
 
-.form-insumo input, .form-insumo button {
-  padding: 10px;
-  font-size: 16px;
-}
-
-table {
+.tabla-insumos {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 12px;
 }
 
-table th, table td {
-  padding: 12px;
-  border: 1px solid #ddd;
+.tabla-insumos th {
+  background-color: #f0f0f5;
+  color: #333;
+  padding: 15px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.tabla-insumos td {
+  background-color: #fafafa;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.tabla-insumos td:first-child {
   text-align: left;
+}
+
+.btn-tabla {
+  background-color: #4b49ac;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-tabla:hover {
+  background-color: #3634a3;
 }
