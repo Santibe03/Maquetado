@@ -40,7 +40,7 @@ export const Administrador = () => {
               <Link to="/modificarcontacto" className="menu-vertical-button">Configuración</Link>
             </li>
             <li className="menu-vertical-item">
-              <Link to="/sugerencias" className="menu-vertical-button">Otros</Link>
+              <Link to="/sugerencias" className="menu-vertical-button">Buzon de sugerencias</Link>
             </li>
           </ul>
         </nav>
