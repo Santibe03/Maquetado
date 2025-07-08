@@ -1,0 +1,62 @@
+.layout-empleado {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar-empleado {
+  width: 250px;
+  background-color: #1c1c2e;
+  color: #fff;
+  padding: 1.5rem;
+  position: fixed;
+  height: 100vh;
+  top: 60px;
+  left: 0;
+}
+
+.sidebar-empleado ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-empleado li {
+  margin: 1rem 0;
+}
+
+.sidebar-empleado a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contenido-empleado {
+  margin-left: 250px;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 60px; /* espacio para el header fijo */
+}
+
+.layout-empleado {
+  display: flex;
+  height: 100vh; /* Ocupar toda la altura de la ventana */
+  margin: 0;
+}
+
+.sidebar-empleado {
+  width: 250px;
+  background-color: #1e1e2f;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.contenido-empleado {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}

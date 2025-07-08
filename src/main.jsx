@@ -2,12 +2,17 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+// Layouts
+import LayoutAdministrador from './Layout/LayoutAdministrador.jsx'
+import LayoutEmpleado from './Layout/LayoutEmpleado';
+import LayoutCliente from './Layout/LayoutCliente.jsx';
+
 // CONTEXTOS
 import { PedidoProvider } from './context/PedidoContext'
 import { ReservaProvider } from './context/ReservaContext'
 import { InsumoProvider } from './context/InsumoContext'
-import { ProductoProvider } from './context/ProductoContext';
-
+import { ProductoProvider } from './context/ProductoContext'
+import { AuthProvider } from './context/AuthContext';
 
 
 // componentes...
@@ -46,72 +51,87 @@ import Configuracion from './components/administrador/Configuracion';
 import ModificarContacto from './components/administrador/ModificarContacto';
 import ModificarUbicacion from './components/administrador/ModificarUbicacion';
 import Sugerencias from './components/administrador/Sugerencias';
-
-
-
-
-
-
-
-
-
-
-
-
+import RutaProtegida from './components/RutaProtegida';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <PedidoProvider>
       <InsumoProvider>
-      <ReservaProvider>
-        <ProductoProvider>
-      <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Body />} />
-          <Route path="/cuenta" element={<MiCuenta />} />
-          <Route path="/administrador" element={<Administrador />} />
-          <Route path="/cliente" element={<Cliente />} />
-          <Route path="/empleados" element={<Empleados />} />
-          <Route path="/home" element={<Body />} />
-          <Route path="/registro" element={<Registro />} />
-          <Route path="/agregarinsumo" element={<IngresoInsumo />} />
-          <Route path="/realizarpedido" element={<RealizarPedido />} />
-          <Route path="/consultarpedido" element={<ConsultarPedido />} />
-          <Route path="/verhistorial" element={<HistorialPedidos />} />
-          <Route path="/contactar" element={<ContactarEmpresa />} />
-          <Route path="/productos" element={<Productos />} />
-          <Route path="/ContactarAdministrador" element={<ContactarAdministrador />} />
-          <Route path="/eliminarinsumo" element={<EliminarInsumo />} />
-          <Route path="/crearcuenta" element={<CrearCuenta />} />
-          <Route path="/administrarcuentas" element={<AdministrarCuentas />} />
-          <Route path="/buzonsugerencias" element={<BuzonSugerencias />} />
-          <Route path="/realizarreserva" element={<RealizarReserva />} />
-          <Route path="/reservadetalle" element={<ReservaSencilla />} />
-          <Route path="/historialreservas" element={<HistorialReservas />} />
-          <Route path="/gestionarpedidos" element={<GestionarPedidos />} />
-          <Route path="/gestionareservas" element={<GestionarReservas />} />
-          <Route path="/inventario" element={<InventarioInsumos />} />
-          <Route path="/verinsumo" element={<VerInsumo />} />
-          <Route path="/verproductos" element={<VerProductos />} />
-          <Route path="/insumoadmin" element={<InsumosAdmin />} />
-          <Route path="/pedidosadmin" element={<PedidosAdmin />} />
-          <Route path="/confirmarpedidos" element={<ConfirmarPedidos />} />
-          <Route path="/consultarpedidos" element={<ConsultarPedidos />} />
-          <Route path="/modificarcontacto" element={<Configuracion />} />
-          <Route path="/modificar-contacto" element={<ModificarContacto />} />
-          <Route path="/modificar-ubicacion" element={<ModificarUbicacion />} />
-          <Route path="/sugerencias" element={<Sugerencias />} />
+        <ReservaProvider>
+          <ProductoProvider>
+            <AuthProvider>
+              <BrowserRouter>
+                <Routes>
+                  {/* Rutas públicas */}
+                  <Route path="/" element={<Body />} />
+                  <Route path="/home" element={<Body />} />
+                  <Route path="/registro" element={<Registro />} />
+                  <Route path="/cuenta" element={<MiCuenta />} />
 
+                  <Route path="/administrador" element={<LayoutAdministrador />}>
+                    <Route index element={<Administrador />} /> {/* Página de bienvenida */}
+                    <Route path="insumoadmin" element={<InsumosAdmin />} />
+                    <Route path="crearcuenta" element={<CrearCuenta />} />
+                    <Route path="pedidosadmin" element={<PedidosAdmin />} />
+                    <Route path="gestionareservas" element={<GestionarReservas />} />
+                    <Route path="modificarcontacto" element={<Configuracion />} />
+                    <Route path="sugerencias" element={<Sugerencias />} />
+                    <Route path="confirmarpedidos" element={<ConfirmarPedidos />} />
+                    <Route path="consultarpedidos" element={<ConsultarPedidos />} />
+                    <Route path="modificar-contacto" element={<ModificarContacto />} />
+                    <Route path="modificar-ubicacion" element={<ModificarUbicacion />} />
+                    <Route path="buzonsugerencias" element={<BuzonSugerencias />} />
+                    <Route path="administrarcuentas" element={<AdministrarCuentas />} />
+                    <Route path="inventario" element={<InventarioInsumos />} />
+                  </Route>
 
+                  <Route
+                    path="/empleados"
+                    element={
+                      <RutaProtegida rolRequerido="Empleado">
+                        <LayoutEmpleado />
+                      </RutaProtegida>
+                    }
+                  >
+                    <Route index element={<Empleados />} />
+                    <Route path="verproductos" element={<VerProductos />} />
+                    <Route path="gestionarpedidos" element={<GestionarPedidos />} />
+                    <Route path="gestionareservas" element={<GestionarReservas />} />
+                    <Route path="verinsumo" element={<VerInsumo />} />
+                    <Route path="contactar" element={<ContactarAdministrador />} />
 
+                  </Route>
 
-        </Routes>
-      </BrowserRouter>
-      <Footer />
-        </ProductoProvider>
-      </ReservaProvider>
+                  <Route path="/realizarpedido" element={<RealizarPedido />} />
+                  <Route path="/consultarpedido" element={<ConsultarPedido />} />
+                  <Route path="/verhistorial" element={<HistorialPedidos />} />
+                  <Route path="/contactar" element={<ContactarEmpresa />} />
+                  <Route path="/productos" element={<Productos />} />
+                  <Route path="/realizarreserva" element={<RealizarReserva />} />
+                  <Route path="/reservadetalle" element={<ReservaSencilla />} />
+                  <Route path="/historialreservas" element={<HistorialReservas />} />
+
+                  <Route path="/cliente" element={<LayoutCliente />}>
+                    <Route index element={<Cliente />} />
+                    <Route path="realizarpedido" element={<RealizarPedido />} />
+                    <Route path="consultarpedido" element={<ConsultarPedido />} />
+                    <Route path="verhistorial" element={<HistorialPedidos />} />
+                    <Route path="realizarreserva" element={<RealizarReserva />} />
+                    <Route path="historialreservas" element={<HistorialReservas />} />
+                    <Route path="contactar" element={<ContactarEmpresa />} />
+                  </Route>
+                  <Route path="/gestionarpedidos" element={<GestionarPedidos />} />
+                  <Route path="/verinsumo" element={<VerInsumo />} />
+                  <Route path="/verproductos" element={<VerProductos />} />
+                  <Route path="/ContactarAdministrador" element={<ContactarAdministrador />} />
+                </Routes>
+              </BrowserRouter>
+
+            </AuthProvider>
+          </ProductoProvider>
+        </ReservaProvider>
       </InsumoProvider>
     </PedidoProvider>
   </StrictMode>
-)
+);
+

@@ -6,6 +6,8 @@ import Footer from './Footer'
 
 function Home() {
   return (
+    <>
+    <Header />
     <div className="home-container">
       <header className="home-header">
         <img src={logo} alt="INVENTORING AND COUNTING Logo" className="home-logo" />
@@ -65,6 +67,8 @@ function Home() {
         <p>&copy; {new Date().getFullYear()} INVENTORING AND COUNTING. Todos los derechos reservados.</p>
       </footer>
     </div>
+    <Footer />
+    </>
   );
 }
 

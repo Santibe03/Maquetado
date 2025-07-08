@@ -6,6 +6,7 @@ import Footer from './Footer'
 export const Registro = () => {
   return (
     <>
+<Header />
     
     <div>
   <div className="container">
@@ -47,6 +48,7 @@ export const Registro = () => {
     </form>
   </div>
 </div>
+    <Footer />
     
     </>
   )

@@ -1,0 +1,11 @@
+.footer-admin {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+  margin-left: 250px; /* mismo ancho que el sidebar */
+  position: relative;
+  bottom: 0;
+}
