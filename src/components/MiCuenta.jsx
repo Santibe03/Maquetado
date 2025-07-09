@@ -1,71 +1,70 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+import './../Styles/login.css';
+import Header from './Header';
+import Footer from './Footer';
 
+const IniciarSesion = () => {
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
-export const MiCuenta = () => {
-  const styles = {
-    container: {
-      fontFamily: 'sans-serif',
-      minHeight: '100vh',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#f5f5f5',
-    },
-    card: {
-      textAlign: 'center',
-      padding: '2rem',
-      border: '1px solid #ccc',
-      borderRadius: '8px',
-      backgroundColor: 'white',
-      width: '100%',
-      maxWidth: '400px',
-    },
-    input: {
-      display: 'block',
-      width: '100%',
-      padding: '0.5rem',
-      margin: '1rem 0',
-      fontSize: '1rem',
-    },
-    button: {
-      padding: '0.5rem 1.5rem',
-      fontSize: '1rem',
-      cursor: 'pointer',
-    },
-    links: {
-      marginTop: '1rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      fontSize: '0.9rem',
-    },
-  }
+  const [nombre, setNombre] = useState('');
+  const [contraseña, setContraseña] = useState('');
+  const [error, setError] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const resultado = login(nombre, contraseña);
+
+    if (resultado.exito) {
+      if (resultado.rol === 'Administrador') navigate('/administrador');
+      else if (resultado.rol === 'Empleado') navigate('/empleados');
+      else if (resultado.rol === 'Cliente') navigate('/cliente');
+      else navigate('/'); // Redirigir a la página principal si el rol no coincide
+    } else {
+      setError(resultado.mensaje);
+    }
+  };
 
   return (
     <>
-      
-      <div style={styles.container}>
-        <div style={styles.card}>
-          <h1>INVENTORYIND AND COUNTING</h1>
-          <h2>BIENVENIDO</h2>
+    <Header />
+    <div className="login-container">
+      <h2 className="login-title">Iniciar Sesión</h2>
 
-          <input type="text" placeholder="Usuario" style={styles.input} required/>
-          <input type="password" placeholder="Contraseña" style={styles.input} required />
-
-          <button style={styles.button}>Ingresar</button>
-
-          <div style={styles.links}>
-
-            <a href="#">¿Perdiste tu contraseña?</a>
-            <a href="/Registro">¿No tienes cuenta? ¡Regístrate!</a>
-
-          </div>
+      <form onSubmit={handleSubmit} className="login-form">
+        <div className="form-group">
+          <label htmlFor="nombre">Nombre de usuario:</label>
+          <input
+            id="nombre"
+            type="text"
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
+            required
+          />
         </div>
-      </div>
-      
+
+        <div className="form-group">
+          <label htmlFor="contraseña">Contraseña:</label>
+          <input
+            id="contraseña"
+            type="password"
+            value={contraseña}
+            onChange={(e) => setContraseña(e.target.value)}
+            required
+          />
+        </div>
+
+        <button type="submit">Ingresar</button>
+        
+      </form>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+    </div>
+    <Footer />
     </>
-  )
-}
+  );
+};
 
-
-export default MiCuenta
+export default IniciarSesion;
 

@@ -1,0 +1,30 @@
+.empleado-inicio {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 2rem;
+}
+
+.empleado-bienvenida {
+  flex: 1;
+}
+
+.empleado-bienvenida h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.empleado-bienvenida p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.empleado-imagen img {
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

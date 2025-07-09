@@ -1,0 +1,103 @@
+/* src/Styles/cliente/layoutCliente.css */
+
+.layout-cliente {
+  display: flex;
+  height: 100vh;
+
+}
+
+.sidebar-cliente {
+  width: 250px;
+  background-color: #1e1e2f;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: calc(100vh - 0px);
+  overflow-y: auto;
+}
+
+.sidebar-cliente h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar-cliente ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-cliente li {
+  margin-bottom: 15px;
+}
+
+.sidebar-cliente a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-cliente a:hover {
+  text-decoration: underline;
+}
+
+.cliente-header {
+  background-color: #ffffff;
+  margin-left: 250px;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.cliente-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cliente-usuario {
+  font-weight: bold;
+  color: #333;
+}
+
+.contenido-cliente {
+  flex: 1;
+  margin-left: 250px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 120px); /* 60 header + 60 footer */
+}
+
+.cliente-footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-left: 250px;
+}
+.layout-cliente {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-cliente {
+  width: 250px;
+  background-color: #191b2a;
+  color: white;
+  padding: 20px;
+  padding-top: 60px; /* Ajuste para compensar el header fijo */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.contenido-cliente {
+  margin-left: 250px;
+  padding: 80px 30px 30px 30px; /* arriba ajustado por el header */
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}

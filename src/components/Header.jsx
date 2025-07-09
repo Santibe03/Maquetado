@@ -4,7 +4,7 @@ import "./../Styles/header.css"
 
 export const Header = () => {
   return (
-    <header>
+    <header classname ="header_principal">
     <div className="top">
       <img src={proyecto} alt="logo" className="logo" />
       <a href='/home'>INVENTORING AND COUNTING</a>
@@ -19,11 +19,7 @@ export const Header = () => {
 
       </div>
     </div>
-    <nav>
-      <a href="/administrador">Administrador</a>
-      <a href="/cliente">Cliente</a>
-      <a href="/empleados">Empleados</a>
-    </nav>
+
   </header>
   )
 }

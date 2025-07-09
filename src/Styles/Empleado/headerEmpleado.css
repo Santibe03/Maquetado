@@ -1,0 +1,28 @@
+.admin-header {
+  background-color: #ffffff;
+  margin-left: 250px; /* espacio para el sidebar */
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header-content h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.admin-usuario {
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}

@@ -1,0 +1,38 @@
+/* src/Styles/layoutAdministrador.css */
+.layout-admin {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar-admin {
+  width: 220px;
+  background-color: #20232a;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-admin ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-admin li {
+  margin: 15px 0;
+}
+
+.sidebar-admin a {
+  color: white;
+  text-decoration: none;
+}
+
+.contenido-admin {
+  margin-left: 220px;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
