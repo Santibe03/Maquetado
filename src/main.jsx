@@ -83,6 +83,7 @@ createRoot(document.getElementById('root')).render(
                     <Route path="buzonsugerencias" element={<BuzonSugerencias />} />
                     <Route path="administrarcuentas" element={<AdministrarCuentas />} />
                     <Route path="inventario" element={<InventarioInsumos />} />
+                    <Route path="ingresoinsumo" element={<IngresoInsumo />} />
                   </Route>
 
                   <Route
@@ -102,14 +103,6 @@ createRoot(document.getElementById('root')).render(
 
                   </Route>
 
-                  <Route path="/realizarpedido" element={<RealizarPedido />} />
-                  <Route path="/consultarpedido" element={<ConsultarPedido />} />
-                  <Route path="/verhistorial" element={<HistorialPedidos />} />
-                  <Route path="/contactar" element={<ContactarEmpresa />} />
-                  <Route path="/productos" element={<Productos />} />
-                  <Route path="/realizarreserva" element={<RealizarReserva />} />
-                  <Route path="/reservadetalle" element={<ReservaSencilla />} />
-                  <Route path="/historialreservas" element={<HistorialReservas />} />
 
                   <Route path="/cliente" element={<LayoutCliente />}>
                     <Route index element={<Cliente />} />
@@ -119,6 +112,8 @@ createRoot(document.getElementById('root')).render(
                     <Route path="realizarreserva" element={<RealizarReserva />} />
                     <Route path="historialreservas" element={<HistorialReservas />} />
                     <Route path="contactar" element={<ContactarEmpresa />} />
+                    <Route path="reservadetalle" element={<ReservaSencilla />} />
+                    <Route path="consultarpedido" element={<ConsultarPedido />} />
                   </Route>
                   <Route path="/gestionarpedidos" element={<GestionarPedidos />} />
                   <Route path="/verinsumo" element={<VerInsumo />} />

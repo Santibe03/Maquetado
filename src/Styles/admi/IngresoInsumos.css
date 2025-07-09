@@ -1,0 +1,103 @@
+/* src/Styles/Administrador/IngresoInsumo.css */
+
+.ingreso-insumo-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.ingreso-insumo-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.ingreso-insumo-form .form-group {
+  margin-bottom: 20px;
+}
+
+.ingreso-insumo-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.ingreso-insumo-form input[type="text"],
+.ingreso-insumo-form input[type="number"],
+.ingreso-insumo-form textarea {
+  width: calc(100% - 20px); /* Ajusta el padding */
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.ingreso-insumo-form input[type="text"]:focus,
+.ingreso-insumo-form input[type="number"]:focus,
+.ingreso-insumo-form textarea:focus {
+  border-color: #007bff; /* Color al enfocar */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.ingreso-insumo-form textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #28a745; /* Un color verde para "guardar" */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #218838;
+  transform: translateY(-2px); /* Pequeño efecto al pasar el mouse */
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+/* Mensajes de notificación */
+.mensaje {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.mensaje.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.mensaje.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

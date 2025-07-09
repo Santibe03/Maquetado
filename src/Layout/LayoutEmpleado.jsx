@@ -20,6 +20,7 @@ const LayoutEmpleado = () => {
             <li><Link to="/empleados/verinsumo">Ver insumos</Link></li>
             <li><Link to="/empleados/contactar">Contactar admin</Link></li>
             <li><Link to="/">Cerrar sesión</Link></li>
+            <li><Link to="/empleados/reservadetalle"></Link></li>
           </ul>
         </aside>
 

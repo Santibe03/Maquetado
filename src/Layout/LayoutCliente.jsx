@@ -14,12 +14,13 @@ const LayoutCliente = () => {
           <ul>
             <li><Link to="/cliente">Inicio</Link></li>
             <li><Link to="/cliente/realizarpedido">Realizar pedido</Link></li>
-            <li><Link to="/cliente/consultarpedido">Consultar pedido</Link></li>
             <li><Link to="/cliente/verhistorial">Historial pedidos</Link></li>
             <li><Link to="/cliente/realizarreserva">Reservar</Link></li>
             <li><Link to="/cliente/historialreservas">Historial reservas</Link></li>
             <li><Link to="/cliente/contactar">Contactar empresa</Link></li>
             <li><Link to="/">Cerrar sesión</Link></li>
+            <li><Link to="/cliente/reservadetalle"></Link></li>
+            <li><Link to="/cliente/consultarpedido"></Link></li>
           </ul>
         </aside>
         <main className="contenido-cliente">

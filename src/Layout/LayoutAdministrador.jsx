@@ -19,6 +19,7 @@ const LayoutAdministrador = () => {
           <li><Link to="/administrador/gestionareservas">Reservas</Link></li>
           <li><Link to="/administrador/crearcuenta">Cuentas</Link></li>
           <li><Link to="/administrador/sugerencias">Sugerencias</Link></li>
+          <li><Link to="/administrador/ingresoinsumo"></Link></li>
           <li><Link to="/">Cerrar sesión</Link></li>
         </ul>
       </aside>

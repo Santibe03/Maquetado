@@ -114,7 +114,7 @@ function HistorialPedidos() {
                     <td>{pedido.direccionEnvio}</td>
                     <td>{pedido.estado}</td>
                     <td>
-                      <button onClick={() => navigate('/consultarpedido', { state: { pedido } })}>Ver Detalles</button>
+                      <button onClick={() => navigate('/cliente/consultarpedido', { state: { pedido } })}>Ver Detalles</button>
 
                       {pedido.estado === 'Pendiente' && (
                         <>

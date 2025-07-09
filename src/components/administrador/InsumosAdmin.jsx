@@ -1,5 +1,5 @@
 import React from 'react';
-import "./../../Styles/admi/InsumoS.css";
+
 import { Link } from 'react-router-dom';
 
 const InsumosAdmin = () => {
@@ -17,7 +17,7 @@ const InsumosAdmin = () => {
         <tbody>
           <tr>
             <td>Agregar Insumo</td>
-            <td><Link to="/agregarinsumo" className="btn-tabla">Ir</Link></td>
+            <td><Link to="/administrador/ingresoinsumo" className="btn-tabla">Ir</Link></td>
           </tr>
           <tr>
             <td>Eliminar Insumo</td>

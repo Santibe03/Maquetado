@@ -117,7 +117,7 @@ const HistorialReservas = () => {
                     <td>{reserva.mesa}</td>
                     <td>{reserva.estado}</td>
                     <td>
-                        <button onClick={() => navigate('/reservadetalle', { state: { reserva } })}>Ver Detalles</button>
+                        <button onClick={() => navigate('/cliente/reservadetalle', { state: { reserva } })}>Ver Detalles</button>
                       {reserva.estado === 'Pendiente' && (
                         <>
                           <button onClick={() => setReservaEditando(reserva)}>Modificar</button>

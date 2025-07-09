@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useInsumos } from '../../context/InsumoContext';
-import './../../Styles/admi/Insumos.css';
+
 
 const InventarioInsumos = () => {
   const { insumos, agregarInsumo } = useInsumos();

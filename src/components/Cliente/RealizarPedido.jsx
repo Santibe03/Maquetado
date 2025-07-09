@@ -48,7 +48,7 @@ function RealizarPedidoForm() {
     localStorage.setItem('historialPedidos', JSON.stringify(historial));
 
     // Redirigir
-    navigate('/consultarpedido');
+    navigate('/cliente/verhistorial');
   };
 
   return (

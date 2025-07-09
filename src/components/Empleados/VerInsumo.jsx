@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInsumos } from '../../context/InsumoContext';
-import './../../Styles/admi/Insumos.css';
+
 
 const VerInsumo = () => {
   const { insumos } = useInsumos();
